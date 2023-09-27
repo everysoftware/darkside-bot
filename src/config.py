@@ -5,3 +5,4 @@ from dataclasses import dataclass
 class Config:
     token: str = 'YOUR_TOKEN'
     pay_token: str = 'YOUR_PAY_TOKEN'
+    site: str = 'YOUR_SITE'

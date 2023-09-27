@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dec475b1-7b14-4f60-bfe4-1ff269dd4655" name="Changes" comment="" />
+    <list default="true" id="dec475b1-7b14-4f60-bfe4-1ff269dd4655" name="Changes" comment="Update requirements.txt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/goods-images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/keyboards/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboards/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/payments.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/payments.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/user.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +37,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Vqj0hh7FPEdcHO8qKL9wQpA4iG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -122,6 +138,18 @@
       <option name="presentableId" value="Default" />
       <updated>1695570284882</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update requirements.txt">
+      <created>1695760138175</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695760138175</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update requirements.txt" />
   </component>
 </project>

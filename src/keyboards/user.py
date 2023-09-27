@@ -1,10 +1,10 @@
 from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton)
 from aiogram.types.web_app_info import WebAppInfo
+from config import Config
 
 
 main_kb = [
-    [KeyboardButton(text='Сделать заказ', web_app=WebAppInfo(url='https://everysoftware.github.io/'))],
-    [KeyboardButton(text='Автор бота')]
+    [KeyboardButton(text='Сделать заказ', web_app=WebAppInfo(url=Config.site))]
 ]
 
 # Передать информацию из сайта в тг можно только через Reply-клавиатуру,
