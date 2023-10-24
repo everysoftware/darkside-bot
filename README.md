@@ -23,7 +23,7 @@
 
 ## Сборка
 
-1. Выгрузите [веб-приложение]((https://github.com/everysoftware/everysoftware.github.io/tree/main/darkside)) на сервер. 
+1. Выгрузите [веб-приложение](https://github.com/everysoftware/everysoftware.github.io/tree/main/darkside) на сервер. 
 2. Установите зависимости ```pip install -r requirements.txt```
 3. Настройте конфигурацию в файле ```src/config.py```
 4. Запустите бота: ```python -m src```
