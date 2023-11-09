@@ -17,3 +17,12 @@
 Бот: Python3, Aiogram3, Telegram Web App, SQLite3  
 Веб-приложение: HTML, CSS, JS  
 
+## Сборка
+
+1. Выгрузите [веб-приложение](https://github.com/everysoftware/everysoftware.github.io/tree/main/darkside) на сервер. 
+2. Установите зависимости ```pip install -r requirements.txt```
+3. Настройте конфигурацию в файле ```src/config.py```
+4. Запустите бота: ```python -m src```
+
+Для проверки бота можете использовать веб-приложение: ```https://everysoftware.github.io/darkside/```.
+
