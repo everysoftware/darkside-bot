@@ -1,9 +1,9 @@
-from aiogram.types import Message
-from aiogram.filters import Command
 from aiogram import F
+from aiogram.filters import Command
+from aiogram.types import Message
 
-from src.app import dp
 import src.keyboards.user as user_kb
+from src.__main__ import dp
 from src.messages.user import MESSAGES
 
 

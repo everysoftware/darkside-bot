@@ -7,7 +7,6 @@ from aiogram import Bot, Dispatcher
 from src.config import Config
 from src.services.sql import Database
 
-
 db = Database('products.db')
 dp = Dispatcher()
 bot = Bot(Config.token, parse_mode='HTML')

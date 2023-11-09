@@ -1,3 +1,4 @@
+from aiogram import F
 from aiogram.types import (Message,
                            LabeledPrice,
                            ContentType,
@@ -5,9 +6,8 @@ from aiogram.types import (Message,
                            ShippingQuery,
                            ShippingOption
                            )
-from aiogram import F
 
-from src.app import bot, dp, db
+from src.__main__ import bot, dp, db
 from src.config import Config
 from src.messages.payments import MESSAGES
 

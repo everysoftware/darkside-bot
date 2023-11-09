@@ -1,10 +1,10 @@
+import os
+
 from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton)
 from aiogram.types.web_app_info import WebAppInfo
-from config import Config
-
 
 main_kb = [
-    [KeyboardButton(text='Сделать заказ', web_app=WebAppInfo(url=Config.site))]
+    [KeyboardButton(text='Сделать заказ', web_app=WebAppInfo(url=os.getenv('WEB_APP_SITE')))]
 ]
 
 # Передать информацию из сайта в тг можно только через Reply-клавиатуру,
