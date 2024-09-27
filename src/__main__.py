@@ -14,16 +14,11 @@ dp = Dispatcher()
 dp.include_routers(*routers)
 bot = Bot(conf.bot_token, default=DefaultBotProperties(parse_mode='HTML'))
 
-
-async def main() -> None:
-    try:
-        await dp.start_polling(bot)
-    finally:
-        await bot.session.close()
-
-
 if __name__ == "__main__":
     # Включаем логирование.
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     # Запускаем поток.
-    asyncio.run(main())
+    try:
+        asyncio.run(dp.start_polling(bot))
+    except (KeyboardInterrupt, SystemExit):
+        logging.info("Bot stopped")
