@@ -3,24 +3,26 @@ import logging
 import sys
 
 from aiogram import Bot, Dispatcher
+from aiogram.client.default import DefaultBotProperties
 
-from src.config import Config
-from src.services.sql import Database
+from src.config import conf
+from src.payments.handlers import router as payment_router
+from src.users.handlers import router as user_router
 
-db = Database('products.db')
+routers = [user_router, payment_router]
 dp = Dispatcher()
-bot = Bot(Config.token, parse_mode='HTML')
+dp.include_routers(*routers)
+bot = Bot(conf.bot_token, default=DefaultBotProperties(parse_mode='HTML'))
 
 
 async def main() -> None:
-    from handlers import dp
     try:
         await dp.start_polling(bot)
     finally:
         await bot.session.close()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Включаем логирование.
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     # Запускаем поток.

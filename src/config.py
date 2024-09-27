@@ -1,8 +1,12 @@
-from dataclasses import dataclass
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
-@dataclass
-class Config:
-    token: str = 'YOUR_TOKEN'
-    pay_token: str = 'YOUR_PAY_TOKEN'
-    site: str = 'YOUR_SITE'
+class Config(BaseSettings):
+    bot_token: str
+    pay_token: str
+    webapp_url: str
+
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+
+
+conf = Config()

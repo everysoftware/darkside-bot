@@ -1,10 +1,10 @@
 # Телеграм бот DarkSide
 
 ## Краткое описание
-Заказ любимой еды из шаурмечной DarkSide (концепт).
+Заказ любимой еды из шаурмечной DarkSide.
 
-<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/16f9f9d8-716c-4ae6-bed5-0db7baccdc83" width="300" />  
-<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/1736c1a6-397f-4571-b14a-a5a57d842661" width="300" />  
+<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/16f9f9d8-716c-4ae6-bed5-0db7baccdc83" width="300"  alt=""/>  
+<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/1736c1a6-397f-4571-b14a-a5a57d842661" width="300"  alt=""/>  
 
 ## Начало работы
 
