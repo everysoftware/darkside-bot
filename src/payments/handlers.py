@@ -18,10 +18,9 @@ router = Router()
 async def buy_process(msg: Message) -> None:
     prod_id = msg.web_app_data.data
     if prod_id.isnumeric():
-        prod_id = int(prod_id)
-        if db.product_exists(prod_id):
-            prod = db.get_product(prod_id)[0]
-            price = [LabeledPrice(label=prod[2], amount=prod[3] * 100)]
+        prod = await db.get_product(int(prod_id))
+        if prod:
+            price = [LabeledPrice(label=prod["name"], amount=prod["amount"] * 100)]
         else:
             await msg.answer(constants.WRONG_PRODUCT_INFO_MSG)
             return
@@ -55,9 +54,7 @@ async def shipping_process(query: ShippingQuery) -> None:
     if not check_validity(query):
         await query.answer(
             ok=False,
-            error_message=constants.NO_DELIVERY_MSG.format(
-                query.shipping_address.city
-            ),
+            error_message=constants.NO_DELIVERY_MSG.format(query.shipping_address.city),
         )
         return
 

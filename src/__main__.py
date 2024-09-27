@@ -12,7 +12,7 @@ from src.users.handlers import router as user_router
 routers = [user_router, payment_router]
 dp = Dispatcher()
 dp.include_routers(*routers)
-bot = Bot(conf.bot_token, default=DefaultBotProperties(parse_mode='HTML'))
+bot = Bot(conf.bot_token, default=DefaultBotProperties(parse_mode="HTML"))
 
 if __name__ == "__main__":
     # Включаем логирование.

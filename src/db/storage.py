@@ -1,25 +1,21 @@
-import sqlite3
+from typing import Mapping, Any
+
+import aiosqlite
 
 
 class Database:
-    def __init__(self, file) -> None:
-        self.connection = sqlite3.connect(file)
-        self.cursor = self.connection.cursor()
+    file: str
 
-    def product_exists(self, product_id) -> bool:
-        with self.connection:
-            return bool(
-                self.cursor.execute(
-                    """SELECT 1 FROM products WHERE product_id=(?)
-                        """,
-                    (product_id,),
-                ).fetchall()
-            )
+    def __init__(self, file: str) -> None:
+        self.file = file
 
-    def get_product(self, product_id) -> list:
-        with self.connection:
-            return self.cursor.execute(
-                """SELECT * FROM products WHERE product_id=(?)
-            """,
-                (product_id,),
-            ).fetchall()
+    async def get_product(self, product_id: int) -> Mapping[str, Any] | None:
+        async with aiosqlite.connect(self.file) as db:
+            db.row_factory = aiosqlite.Row
+            async with db.execute(
+                    "SELECT * FROM products WHERE product_id=(?)", (product_id,)
+            ) as cursor:
+                items = await cursor.fetchall()
+                if not items:
+                    return None
+                return items[0]
