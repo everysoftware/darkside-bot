@@ -1,28 +1,31 @@
 # Телеграм бот DarkSide
 
 ## Краткое описание
+
 Заказ любимой еды из шаурмечной DarkSide.
 
-<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/16f9f9d8-716c-4ae6-bed5-0db7baccdc83" width="300"  alt=""/>  
-<img src="https://github.com/everysoftware/darkside-tg-bot/assets/22497421/1736c1a6-397f-4571-b14a-a5a57d842661" width="300"  alt=""/>  
+<img src="https://github.com/everysoftware/darkside-bot/assets/22497421/16f9f9d8-716c-4ae6-bed5-0db7baccdc83" width="300"  alt=""/>  
+<img src="https://github.com/everysoftware/darkside-bot/assets/22497421/1736c1a6-397f-4571-b14a-a5a57d842661" width="300"  alt=""/>  
 
-## Начало работы
+## Концепция
 
-1. Запустите бота, нажмите на кнопку "Сделать заказ". Выберите интересующее вас блюдо. Нажмите на кнопку "Перейти к оплате", рядом будет указана стоимость заказа.
-2. В Телеграм придет запрос на оплату. Нажмите "Оплатить", выберите удобный способ доставки и оплаты. При успешной оплате заказ будет принят в обработку.
+1. Запустите бота, нажмите на кнопку "Сделать заказ". Выберите интересующее вас блюдо. Нажмите на кнопку "Перейти к
+   оплате", рядом будет указана стоимость заказа.
+2. В Телеграм придет запрос на оплату. Нажмите "Оплатить", выберите удобный способ доставки и оплаты. При успешной
+   оплате заказ будет принят в обработку.
 3. Готово!
 
 ## Стек технологий
 
-Бот: Python3, Aiogram3, Telegram Web App, SQLite3  
-Веб-приложение: HTML, CSS, JS  
+Бот: Python 3.12, aiogram, SQLite3  
+Мини-приложение: HTML, CSS, JS
 
 ## Сборка
 
-1. Выгрузите [веб-приложение](https://github.com/everysoftware/everysoftware.github.io/tree/main/darkside) на сервер. 
+1. Склонируйте репозиторий: ```git clone github.com/everysoftware/darkside-bot```
 2. Установите зависимости ```pip install -r requirements.txt```
-3. Настройте конфигурацию в файле ```src/config.py```
+3. Создайте файл с конфигурацией `.env` на основе `.env.example`
 4. Запустите бота: ```python -m src```
+5. Готово!
 
-Для проверки бота можете использовать веб-приложение: ```https://everysoftware.github.io/darkside/```.
-
+Made with love ❤️
